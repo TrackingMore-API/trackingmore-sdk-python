@@ -1,0 +1,47 @@
+# Python specific
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+env/
+bin/
+lib/
+include/
+*.egg-info/
+.installed.cfg
+.Python
+build/
+develop-eggs/
+.installed.cfg
+downloads/
+parts/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.db
+*.sqlite3
+*.sqlite
+
+# IDEs
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editors
+*.swp
+*.swo
+
+# Environment config
+.env

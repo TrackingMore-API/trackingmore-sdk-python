@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "trackingmore"
+version = "0.1.0"
+description = "The Python SDK of Trackingmore API"
+authors = ["TrackingMore <manage@trackingmore.org>"]
+readme = "README.md"
+homepage = "https://www.trackingmore.com/docs/trackingmore/d5ac362fc3cda-api-quick-start"
+repository = "https://github.com/TrackingMores/trackingmore-sdk-python"
+documentation = "https://github.com/TrackingMores/trackingmore-sdk-python"
+keywords = ["trackingmore", "api", "tracking"]
+
+packages = [
+    { include = "trackingmore" },
+    { include = "*.md" },
+    { include = "LICENSE" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.31.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

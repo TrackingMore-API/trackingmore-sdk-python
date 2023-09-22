@@ -1,2 +1,4 @@
-# trackingmore-sdk-python
-The Python SDK of Trackingmore API
+trackingmore-sdk-python
+=================
+
+The Python SDK of
