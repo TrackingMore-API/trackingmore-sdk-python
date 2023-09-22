@@ -4,6 +4,7 @@ __pycache__/
 
 # Virtual Environment
 venv/
+dist/
 env/
 bin/
 lib/

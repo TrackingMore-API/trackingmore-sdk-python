@@ -31,7 +31,7 @@ Supported Python Versions
 ## Installation
 
 ```
-$ pip install trackingmore
+$ pip install trackingmore-sdk-python
 ```
 
 ## Via source code

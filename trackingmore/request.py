@@ -18,8 +18,6 @@ timeout = 10
 
 headers = {}
 
-proxy = 'http://192.168.2.198:7890'
-
 def get_request_url(path):
     pact = 'https' if apiPort == 443 else 'http'
     url = pact+'://'+apiBaseUrl+'/'+apiVersion+'/'+path
@@ -37,14 +35,6 @@ def make_request( method='GET', path ='', params=None):
 
         headers = get_request_header(get_api_key())
 
-        verify = False
-
-        if proxy:
-            proxies = {
-                'http': proxy,
-                'https': proxy,
-            }
-
         json_data = None
         if params is not None:
             if method == 'GET':
@@ -53,13 +43,13 @@ def make_request( method='GET', path ='', params=None):
                 json_data = json.dumps(params)
 
         if method == 'GET':
-            response = requests.get(url, headers=headers, timeout=timeout, verify=verify, proxies=proxies)
+            response = requests.get(url, headers=headers, timeout=timeout)
         elif method == 'POST':
-            response = requests.post(url, headers=headers, data=json_data, timeout=timeout, verify=verify, proxies=proxies)
+            response = requests.post(url, headers=headers, data=json_data, timeout=timeout)
         elif method == 'PUT':
-            response = requests.put(url, headers=headers, data=json_data, timeout=timeout, verify=verify, proxies=proxies)
+            response = requests.put(url, headers=headers, data=json_data, timeout=timeout)
         elif method == 'DELETE':
-            response = requests.delete(url, headers=headers, timeout=timeout, verify=verify, proxies=proxies)
+            response = requests.delete(url, headers=headers, timeout=timeout)
         else:
             raise TrackingMoreException('Unsupported HTTP method: {}'.format(method))
 
