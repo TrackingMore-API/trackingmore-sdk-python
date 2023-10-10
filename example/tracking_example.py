@@ -51,7 +51,7 @@ if __name__ == '__main__':
 
     # params = {'tracking_numbers': '92612903029511573030094547', 'courier_code': 'usps'}
     # params = {'tracking_numbers': '92612903029511573030094547,92612903029511573030094548', 'courier_code': 'usps'}
-    params = {'created_date_min': '2023-08-23T14:00:00+08:00', 'created_date_max': '2023-08-23T15:04:00+08:00'}
+    params = {'created_date_min': '2023-10-09T06:00:00+00:00', 'created_date_max': '2023-10-10T13:45:00+00:00'}
     result = get_tracking_results(params)
     print(result)
 
