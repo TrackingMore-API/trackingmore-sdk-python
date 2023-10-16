@@ -96,7 +96,6 @@ def test_empty_id_string():
 def test_valid_retrack_tracking():
     test_id_string = "9a2f8a77effe022aa296dea55d3ddaf3"  # Replace with expired tracking order number
     response = tracking.retrack_tracking_by_id(test_id_string)
-    print(response)
     assert response['meta']['code'] == 200
 
 def test_empty_id_string():
