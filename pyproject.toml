@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "trackingmore-sdk-python"
-version = "0.1.2"
+version = "0.1.3"
 description = "The Python SDK of Trackingmore API"
 authors = ["TrackingMore <manage@trackingmore.org>"]
 readme = "README.md"
