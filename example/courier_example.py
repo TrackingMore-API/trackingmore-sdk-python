@@ -8,6 +8,8 @@ def get_all_couriers():
         return result
     except trackingmore.exception.TrackingMoreException as ce:
         print(ce)
+    except Exception as e:
+        print("other error:", e)
 
 def detect(params):
     try:
@@ -15,6 +17,8 @@ def detect(params):
         return result
     except trackingmore.exception.TrackingMoreException as ce:
         print(ce)
+    except Exception as e:
+        print("other error:", e)
 
 if __name__ == '__main__':
     result = get_all_couriers()

@@ -29,7 +29,7 @@ def get_request_header(apiKey):
     headers['Tracking-Api-Key'] = apiKey
     return headers
 
-def make_request( method='GET', path ='', params=None):
+def make_request(method='GET', path='', params=None):
     try:
         url = get_request_url(path)
 

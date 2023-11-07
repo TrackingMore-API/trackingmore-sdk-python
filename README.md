@@ -51,7 +51,14 @@ import trackingmore
 
 trackingmore.api_key = 'you api key'
 
-couriers = trackingmore.courier.get_all_couriers()
+try:
+  couriers = trackingmore.courier.get_all_couriers()
+  print(couriers)
+except trackingmore.exception.TrackingMoreException as ce:
+  print(ce)
+except Exception as e:
+  print("other error:", e)
+
 ```
 
 ## Testing
@@ -89,7 +96,7 @@ try:
   couriers = trackingmore.courier.detect(params)
   print(couriers)
 except trackingmore.exception.TrackingMoreException as ce:
-  print(ce)
+  print(ce) 
 
 # Tracking number cannot be empty
 ```
@@ -104,6 +111,9 @@ try:
   print(result)
 except trackingmore.exception.TrackingMoreException as ce:
   print(ce)
+except Exception as e:
+  print("other error:", e) 
+
 ```
 
 ##### Return a list of matched couriers based on submitted tracking number.
@@ -115,6 +125,8 @@ try:
   print(result)
 except trackingmore.exception.TrackingMoreException as ce:
   print(ce)
+except Exception as e:
+  print("other error:", e) 
 ```
 
 ## Trackings
@@ -127,6 +139,8 @@ try:
   print(result)
 except trackingmore.exception.TrackingMoreException as ce:
   print(ce)
+except Exception as e:
+  print("other error:", e) 
 ```
 
 ##### Get tracking results of multiple trackings.
@@ -141,6 +155,8 @@ try:
   print(result)
 except trackingmore.exception.TrackingMoreException as ce:
   print(ce)
+except Exception as e:
+  print("other error:", e) 
 ```
 
 ##### Create multiple trackings (Max. 40 tracking numbers create in one call).
@@ -153,6 +169,8 @@ try:
   print(result)
 except trackingmore.exception.TrackingMoreException as ce:
   print(ce)
+except Exception as e:
+  print("other error:", e) 
 ```
 
 ##### Update a tracking by ID.
@@ -165,6 +183,8 @@ try:
   print(result)
 except trackingmore.exception.TrackingMoreException as ce:
   print(ce)
+except Exception as e:
+  print("other error:", e) 
 ```
 
 ##### Delete a tracking by ID.
@@ -176,6 +196,8 @@ try:
   print(result)
 except trackingmore.exception.TrackingMoreException as ce:
   print(ce)
+except Exception as e:
+  print("other error:", e) 
 ```
 
 ##### Retrack expired tracking by ID.
@@ -187,6 +209,8 @@ try:
   print(result)
 except trackingmore.exception.TrackingMoreException as ce:
   print(ce)
+except Exception as e:
+  print("other error:", e) 
 ```
 ## Air Waybill
 ##### Create an air waybill.
@@ -198,6 +222,8 @@ try:
   print(result)
 except trackingmore.exception.TrackingMoreException as ce:
   print(ce)
+except Exception as e:
+  print("other error:", e) 
 ```
 
 ## Response Code

@@ -8,6 +8,8 @@ def create_tracking(params):
         return result
     except trackingmore.exception.TrackingMoreException as ce:
         print(ce)
+    except Exception as e:
+        print("other error:", e)
 
 def get_tracking_results(params):
     try:
@@ -15,6 +17,8 @@ def get_tracking_results(params):
         return result
     except trackingmore.exception.TrackingMoreException as ce:
         print(ce)
+    except Exception as e:
+        print("other error:", e)
 
 def batch_create_trackings(params):
     try:
@@ -22,6 +26,8 @@ def batch_create_trackings(params):
         return result
     except trackingmore.exception.TrackingMoreException as ce:
         print(ce)
+    except Exception as e:
+        print("other error:", e)
 
 def update_tracking_by_id(id_string, params):
     try:
@@ -29,6 +35,8 @@ def update_tracking_by_id(id_string, params):
         return result
     except trackingmore.exception.TrackingMoreException as ce:
         print(ce)
+    except Exception as e:
+        print("other error:", e)
 
 def delete_tracking_by_id(id_string):
     try:
@@ -36,6 +44,8 @@ def delete_tracking_by_id(id_string):
         return result
     except trackingmore.exception.TrackingMoreException as ce:
         print(ce)
+    except Exception as e:
+        print("other error:", e)
 
 def retrack_tracking_by_id(id_string):
     try:
@@ -43,6 +53,8 @@ def retrack_tracking_by_id(id_string):
         return result
     except trackingmore.exception.TrackingMoreException as ce:
         print(ce)
+    except Exception as e:
+        print("other error:", e)
 
 if __name__ == '__main__':
     params = {'tracking_number': '92612903029511573030094547','courier_code':'usps'}
