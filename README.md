@@ -1,7 +1,7 @@
 trackingmore-sdk-python
 =================
 
-The Python SDK of Trackingmore API
+The Python SDK of TrackingMore API
 
 Contact: <manage@trackingmore.org>
 
@@ -20,13 +20,13 @@ Supported Python Versions
 - pypy3
 
 ## Index
-1. [Installation](https://github.com/TrackingMores/trackingmore-sdk-python#installation)
-2. [Testing](https://github.com/TrackingMores/trackingmore-sdk-python#testing)
-3. [Error Handling](https://github.com/TrackingMores/trackingmore-sdk-python#error-handling)
+1. [Installation](https://github.com/TrackingMore-API/trackingmore-sdk-python#installation)
+2. [Testing](https://github.com/TrackingMore-API/trackingmore-sdk-python#testing)
+3. [Error Handling](https://github.com/TrackingMore-API/trackingmore-sdk-python#error-handling)
 4. SDK
-    1. [Couriers](https://github.com/TrackingMores/trackingmore-sdk-python#couriers)
-    2. [Trackings](https://github.com/TrackingMores/trackingmore-sdk-python#trackings)
-    3. [Air Waybill](https://github.com/TrackingMores/trackingmore-sdk-python#air-waybill)
+    1. [Couriers](https://github.com/TrackingMore-API/trackingmore-sdk-python#couriers)
+    2. [Trackings](https://github.com/TrackingMore-API/trackingmore-sdk-python#trackings)
+    3. [Air Waybill](https://github.com/TrackingMore-API/trackingmore-sdk-python#air-waybill)
 
 
 ## Installation
