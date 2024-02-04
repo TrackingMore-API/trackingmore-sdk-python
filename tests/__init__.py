@@ -1,3 +1,3 @@
 import trackingmore
 
-trackingmore.api_key = 'you api key'
+trackingmore.api_key = 'your api key'

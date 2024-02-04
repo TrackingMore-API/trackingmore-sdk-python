@@ -49,7 +49,7 @@ $ pip install trackingmore-sdk-python.zip
 ```python
 import trackingmore
 
-trackingmore.api_key = 'you api key'
+trackingmore.api_key = 'your api key'
 
 try:
   couriers = trackingmore.courier.get_all_couriers()
@@ -89,7 +89,7 @@ except trackingmore.exception.TrackingMoreException as ce:
 ```python
 import trackingmore
 
-trackingmore.api_key = 'you api key'
+trackingmore.api_key = 'your api key'
 
 try:
   params = {'tracking_number': ''}
